@@ -1,0 +1,11 @@
+version: '3'
+services:
+  jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./home:/home/jupyter/data
+    container_name: python-jupyter
+    network_mode: "bridge"
+
